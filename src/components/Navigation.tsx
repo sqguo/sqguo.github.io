@@ -7,7 +7,7 @@ import resume from "../assets/resume_v4_4.pdf";
 
 import "./Navigation.css";
 
-const navigationContainer: Variants = {
+const navigationContainer = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -16,12 +16,12 @@ const navigationContainer: Variants = {
       staggerChildren: 0.2,
     },
   },
-};
+} as const satisfies Variants;
 
 const navigationItem: Variants = {
   hidden: { opacity: 0, translateY: 30 },
   show: { opacity: 1, translateY: 0, transition: { bounce: 0 } },
-};
+} as const satisfies Variants;
 
 interface NavigationProps {
   show: boolean;
