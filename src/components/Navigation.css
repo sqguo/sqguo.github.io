@@ -1,0 +1,18 @@
+.navigation__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 870px;
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 24px;
+  justify-content: space-between;
+  position: relative;
+  top: 80px;
+}
+
+@media screen and (max-width: 500px) {
+  .navigation__wrapper {
+    top: 12px;
+  }
+}

@@ -29,6 +29,7 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .profile__name {
@@ -49,19 +50,6 @@
   color: #000000b5;
 }
 
-.navigation__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 870px;
-  margin-left: 50px;
-  margin-right: 50px;
-  gap: 24px;
-  justify-content: space-between;
-  position: relative;
-  top: 80px;
-}
-
 @media screen and (max-width: 1500px) {
   .profile__img {
     width: 200px;
@@ -80,11 +68,5 @@
 @media screen and (max-width: 1000px) {
   .profile__description {
     max-width: 370px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .navigation__wrapper {
-    top: 12px;
   }
 }
