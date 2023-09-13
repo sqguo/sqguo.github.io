@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
 import { RiContactsBook2Fill } from "react-icons/ri";
 import IconLink from "./IconLink";
-import resume from "../assets/resume_v4_4.pdf";
+import resume from "../assets/resume_v4_5.pdf";
 
 import "./Navigation.css";
 
