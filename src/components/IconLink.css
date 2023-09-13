@@ -1,0 +1,43 @@
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.icon-link:hover {
+  .icon-link__name:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+.icon-link:not(:hover) {
+  .icon-link__icon {
+    color: #0000008c !important;
+  }
+}
+
+.icon-link__icon {
+  transition: color 200ms ease-in-out;
+}
+
+.icon-link__name {
+  font-size: 16px;
+  margin-top: -1px;
+  position: relative;
+  padding-bottom: 0.5px;
+}
+
+.icon-link__name:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0000008c;
+  transform-origin: bottom right;
+  transition: transform 200ms ease-out;
+}
