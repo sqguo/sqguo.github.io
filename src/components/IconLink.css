@@ -5,17 +5,13 @@
   cursor: pointer;
 }
 
-.icon-link:hover {
-  .icon-link__name:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+.icon-link:hover .icon-link__name:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-.icon-link:not(:hover) {
-  .icon-link__icon {
-    color: #0000008c !important;
-  }
+.icon-link:not(:hover) .icon-link__icon {
+  color: #0000008c !important;
 }
 
 .icon-link__icon {
