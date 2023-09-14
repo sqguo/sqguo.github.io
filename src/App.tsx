@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./App.css";
 import { Navigation } from "./components";
 
-const ANIMATION_DELAY_MS = 600;
+const ANIMATION_DELAY_MS = 1000;
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
